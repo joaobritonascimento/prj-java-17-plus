@@ -26,9 +26,9 @@ public class UsuarioService {
 
     }
 
-    public List<Usuario> findAll(Integer id_cat) {
-        produtoService.findById(id_cat);
-        return repository.findAllByproduto(id_cat); //
+    public List<Usuario> findAll(Integer id_prod) {
+        produtoService.findById(id_prod);
+        return repository.findAllByProduto(id_prod); //
     }
 
     public Usuario update(Integer id, Usuario obj) {
@@ -42,10 +42,10 @@ public class UsuarioService {
         newObj.setEmail(obj.getEmail());
     }
 
-    public Usuario create(Integer id_cat, Usuario obj) {
+    public Usuario create(Integer id_prod, Usuario obj) {
         obj.setId(null);
-        Produto cat = produtoService.findById(id_cat);
-        obj.setproduto(cat);
+        Produto prod = produtoService.findById(id_prod);
+        obj.setproduto(prod);
         return repository.save(obj);
     }
 

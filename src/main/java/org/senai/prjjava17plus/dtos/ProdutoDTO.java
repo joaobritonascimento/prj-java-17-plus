@@ -24,8 +24,6 @@ public class ProdutoDTO implements Serializable { // a classe Serializable é um
 
     private String img;
 
-
-
     public ProdutoDTO() {
         super();
     }
