@@ -1,4 +1,4 @@
-package org.senai.prjjava17.service.exceptions;
+package org.senai.prjjava17plus.service.exceptions;
 
 public class ObjectNotFoundException extends RuntimeException{
     

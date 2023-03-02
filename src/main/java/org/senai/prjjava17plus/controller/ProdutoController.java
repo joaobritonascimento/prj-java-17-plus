@@ -1,9 +1,9 @@
-package org.senai.prjjava17.controller;
+package org.senai.prjjava17plus.controller;
 
 import java.util.Optional;
 
-import org.senai.prjjava17.entity.Produto;
-import org.senai.prjjava17.repositories.ProdutoRepository;
+import org.senai.prjjava17plus.entity.Produto;
+import org.senai.prjjava17plus.repositories.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;

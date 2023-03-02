@@ -1,11 +1,10 @@
-package org.senai.prjjava17.dtos;
+package org.senai.prjjava17plus.dtos;
 
 import java.io.Serializable;
 
-import javax.validation.constraints.NotEmpty;
-
 import org.hibernate.validator.constraints.Length;
-import org.senai.prjjava17.entity.Produto;
+import org.senai.prjjava17plus.entity.Produto;
+import javax.validation.constraints.NotEmpty;
 
 public class ProdutoDTO implements Serializable { // a classe Serializable é uma interface em metodos ou atributos
 
@@ -18,8 +17,14 @@ public class ProdutoDTO implements Serializable { // a classe Serializable é um
     private String nome;
 
     @NotEmpty(message = "Campo DESCRIÇÃO é obrigatório")
-    @Length(min = 3, max = 200, message = "O campo DESCRIÇÃO de deve entre 3 e 200 caracteres")
+    @Length(min = 3, max = 2000, message = "O campo DESCRIÇÃO de deve entre 3 e 200 caracteres")
     private String descricao;
+
+    private float valor;
+
+    private String img;
+
+
 
     public ProdutoDTO() {
         super();
@@ -60,5 +65,22 @@ public class ProdutoDTO implements Serializable { // a classe Serializable é um
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public float getValor() {
+        return valor;
+    }
+
+    public void setValor(float valor) {
+        this.valor = valor;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+    
 
 }

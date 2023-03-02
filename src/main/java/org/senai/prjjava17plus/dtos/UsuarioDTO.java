@@ -1,8 +1,8 @@
-package org.senai.prjjava17.dtos;
+package org.senai.prjjava17plus.dtos;
 
 import java.io.Serializable;
 
-import org.senai.prjjava17.entity.Usuario;
+import org.senai.prjjava17plus.entity.Usuario;
 
 public class UsuarioDTO implements Serializable {
 

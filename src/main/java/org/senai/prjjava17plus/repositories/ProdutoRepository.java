@@ -1,6 +1,6 @@
-package org.senai.prjjava17.repositories;
+package org.senai.prjjava17plus.repositories;
 
-import org.senai.prjjava17.entity.Produto;
+import org.senai.prjjava17plus.entity.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

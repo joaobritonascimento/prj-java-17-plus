@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.senai</groupId>
-	<artifactId>prj-java-17</artifactId>
+	<artifactId>prj-java-17-plus</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>prj-java-17</name>
+	<name>prj-java-17-plus</name>
 	<description>Projeto do curso Desenvolvedor Java do SENAI - java 17</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -25,7 +25,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -42,6 +45,7 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

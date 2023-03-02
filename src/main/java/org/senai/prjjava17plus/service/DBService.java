@@ -1,23 +1,23 @@
-package org.senai.prjjava17.service;
+package org.senai.prjjava17plus.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.senai.prjjava17plus.entity.Produto;
+//import org.senai.prjjava17plus.entity.Usuario;
+//import org.senai.prjjava17plus.repositories.ProdutoRepository;
+//import org.senai.prjjava17plus.repositories.UsuarioRepository;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
-
-import org.senai.prjjava17.entity.Produto;
-import org.senai.prjjava17.entity.Usuario;
-import org.senai.prjjava17.repositories.ProdutoRepository;
-import org.senai.prjjava17.repositories.UsuarioRepository;
+//import java.util.Arrays;
 
 @Service
 public class DBService {
 
-    @Autowired //Camadas de acesso a dados
-	private ProdutoRepository produtoRepository;
+    //@Autowired //Camadas de acesso a dados
+	//private ProdutoRepository produtoRepository;
 	
-    @Autowired //Camadas de acesso a dados
-	private UsuarioRepository usuarioRepository;
+    //@Autowired //Camadas de acesso a dados
+	//private UsuarioRepository usuarioRepository;
 
     public void instanciaBaseDeDados(){
 

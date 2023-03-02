@@ -1,14 +1,14 @@
-package org.senai.prjjava17.service;
+package org.senai.prjjava17plus.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import org.senai.prjjava17.repositories.usuarioRepository;
-import org.senai.prjjava17.service.exceptions.ObjectNotFoundException;
+import org.senai.prjjava17plus.entity.Produto;
+import org.senai.prjjava17plus.entity.Usuario;
+import org.senai.prjjava17plus.repositories.UsuarioRepository;
+import org.senai.prjjava17plus.service.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.senai.prjjava17.entity.Produto;
-import org.senai.prjjava17.entity.Usuario;
 
 @Service
 public class UsuarioService {
@@ -38,9 +38,8 @@ public class UsuarioService {
     }
 
     private void updateData(Usuario newObj, Usuario obj) {
-        newObj.setTitulo(obj.getTitulo());
-        newObj.setNome_autor(obj.getNome_autor());
-        newObj.setTexto(obj.getTexto());
+        newObj.setNome(obj.getNome());
+        newObj.setEmail(obj.getEmail());
     }
 
     public Usuario create(Integer id_cat, Usuario obj) {

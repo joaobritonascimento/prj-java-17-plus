@@ -1,13 +1,13 @@
-package org.senai.prjjava17.service;
+package org.senai.prjjava17plus.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import org.senai.prjjava17.entity.Produto;
-import org.senai.prjjava17.dtos.ProdutoDTO;
-import org.senai.prjjava17.repositories.ProdutoRepository;
-import org.senai.prjjava17.service.exceptions.DataIntegrityViolationException;
-import org.senai.prjjava17.service.exceptions.ObjectNotFoundException;
+import org.senai.prjjava17plus.dtos.ProdutoDTO;
+import org.senai.prjjava17plus.entity.Produto;
+import org.senai.prjjava17plus.repositories.ProdutoRepository;
+import org.senai.prjjava17plus.service.exceptions.DataIntegrityViolationException;
+import org.senai.prjjava17plus.service.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

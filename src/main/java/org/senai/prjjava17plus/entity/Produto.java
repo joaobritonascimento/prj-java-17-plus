@@ -1,4 +1,4 @@
-package org.senai.prjjava17.entity;
+package org.senai.prjjava17plus.entity;
 
 import java.io.Serializable;
 
@@ -8,17 +8,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-
-public class Usuario implements Serializable{
+public class Produto implements Serializable {
 
     private static final long serialVersionUID=1L; //1L define que essa é a primeira versão da classe.
-    
+        
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
     private String nome;
-    private String email;
-    
+    private String descricao;
+    private float valor;
+    private String img;
+
     public Integer getId() {
         return id;
     }
@@ -31,12 +32,23 @@ public class Usuario implements Serializable{
     public void setNome(String nome) {
         this.nome = nome;
     }
-    public String getEmail() {
-        return email;
+    public String getDescricao() {
+        return descricao;
     }
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
-
-    
+    public float getValor() {
+        return valor;
+    }
+    public void setValor(float valor) {
+        this.valor = valor;
+    }
+    public String getImg() {
+        return img;
+    }
+    public void setImg(String img) {
+        this.img = img;
+    }
+   
 }

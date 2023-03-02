@@ -1,4 +1,4 @@
-package org.senai.prjjava17;
+package org.senai.prjjava17plus;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
